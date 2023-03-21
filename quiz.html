@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<!-- quiz -->
+
+
+<html>
+
+	<head>
+
+		<title>hollow's hellhole - d&d blog!!</title>
+
+		<link rel="stylesheet" type="text/css" href="dndstyle.css"> 
+
+		<link rel="icon" type="image/x-icon" href="dice.ico">
+
+		<meta name="author" content="Alex S">
+
+		<meta name="author" content="HollowKin89">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<meta charset="UTF-8">
+		
+		<div class="footer">
+
+  			<p class="footer-text">This site was made by Alex S with the aid of many caffinated beverages. Main page  <br><a href="index.html" class="footer-text">this</a> way, directory is <a href="directory.html" class="footer-text">here.</a><br><small>&copy; 2023</small></p>
+		</div> 
+
+	<style type="text/css">
+
+			html {
+ 			   box-sizing: border-box;
+		}
+
+			*,
+			*:before,
+			*:after {
+ 			   box-sizing: inherit;
+		}
+
+			body {
+ 				padding: 1rem;
+		}
+			
+			.quiz,
+			.choices {
+    			list-style-type: none;
+   				padding: 0;
+		}
+
+			.choices li {
+ 			   margin-bottom: 5px;
+		}
+
+			.choices label {
+			    display: flex;
+    			align-items: center;
+		}
+
+			.choices label,
+			input[type="radio"] {
+			    cursor: pointer;
+		}
+
+			input[type="radio"] {
+    			margin-right: 8px;
+		}
+
+			.view-results {
+   				padding: 1rem;
+    			cursor: pointer;
+			    font-size: inherit;
+			    color: white;
+			    background: darkorchid;
+			    border-radius: 8px;
+			    margin-right: 5px;
+		}
+
+			.my-results {
+			    padding: 1rem;
+  				border: 1px solid darkorchid;
+		}
+
+
+	</style>
+
+	</head>
+
+
+
+	<body> 
+
+		<script type="text/javascript">var answers = ["B", "A", "C","C"],
+   			tot = answers.length;
+			function getCheckedValue(radioName) {
+    		var radios = document.getElementsByName(radioName);
+   		 for (var y = 0; y < radios.length; y++)
+        if (radios[y].checked) return radios[y].value;
+	}
+		function getScore() {
+  	 	var score = 0;
+    	for (var i = 0; i < tot; i++)
+        if (getCheckedValue("question" + i) === answers[i]) score += 1;
+    	return score;
+	}
+		function returnScore() {
+    	document.getElementById("myresults").innerHTML =
+        "Your score is " + getScore() + "/" + tot;
+   		if (getScore() > 3) {
+        	alert("4/4, congratulations! You have no life! Touch some grass.")
+    } 
+    	else if (getScore() > 2) {
+    		alert("3/4. Not (that) bad.")
+    }
+    	else if (getScore() > 1) {
+    		alert("2/4 is almost, nearly, slightly ok..")
+    }
+    	else if (getScore() > 0) {
+    		alert("1/4 You must have guessed randomly, obviously. If this was a genuine attempt, I feel bad for you.")
+    }
+
+    	else {
+    		alert("This should not be happening, if you see this text something went wrong. please send me a discord message at HollowKin89#9503 or on my github - HollowKin89, so i can fix this")
+    };
+}
+    		</script>
+
+		<h1 class="wwh1"> how well do you know dnd? </h1>
+
+		<hr>
+
+		<p> in this quiz, you will see how well you know d&d. there are 10 questions. what will your score be?</p>
+
+		<ul class="quiz">
+    	
+    	<li>
+        
+        <h4>How many classes are shown in the Player's Handbook?</h4>
+        
+        <ul class="choices">
+           
+            <li>
+             
+                <label>
+
+                    <input type="radio" name="question0" value="A" /><span>9</span>
+
+                </label>
+            </li>
+
+
+            <li>
+                <label>
+
+                	<input type="radio" name="question0" value="B" /><span>11</span>
+
+                </label>
+
+            </li>
+
+            <li>
+             
+                <label>
+
+                    <input type="radio" name="question0" value="C" /><span>12</span>
+
+                </label>
+            </li>
+
+
+            <li>
+                <label>
+
+                	<input type="radio" name="question0" value="D" /><span>14</span>
+
+                </label>
+
+            </li>
+
+        </ul>
+
+   		</li>
+
+
+
+
+	<ul class="quiz">
+    	
+    <li>
+        
+    <h4>Which of these is not an actual dice type in D&D?</h4>
+        
+        <ul class="choices">
+           
+            <li>
+             
+                <label>
+
+                    <input type="radio" name="question1" value="A" /><span>16 sided die</span>
+
+                </label>
+            </li>
+
+
+            <li>
+                <label>
+
+                	<input type="radio" name="question1" value="B" /><span>10 sided die</span>
+
+                </label>
+
+            </li>
+
+            <li>
+             
+                <label>
+
+                    <input type="radio" name="question1" value="C" /><span>8 sided die</span>
+
+                </label>
+            </li>
+
+
+            <li>
+                <label>
+
+                	<input type="radio" name="question1" value="D" /><span>4 sided die</span>
+
+                </label>
+
+            </li>
+
+        </ul>
+
+    </li>
+
+
+
+
+	<ul class="quiz">
+    	
+    <li>
+        
+    <h4>Which of these races arent in d&d?</h4>
+        
+        <ul class="choices">
+           
+            <li>
+             
+                <label>
+
+                    <input type="radio" name="question2" value="A" /><span>Arakocra</span>
+
+                </label>
+            </li>
+
+
+            <li>
+                <label>
+
+                	<input type="radio" name="question2" value="B" /><span>Genasi</span>
+
+                </label>
+
+            </li>
+
+            <li>
+             
+                <label>
+
+                    <input type="radio" name="question2" value="C" /><span>Howlin</span>
+
+                </label>
+            </li>
+
+
+            <li>
+                <label>
+
+                	<input type="radio" name="question2" value="D" /><span>Kobold</span>
+
+                </label>
+
+            </li>
+
+        </ul>
+
+    </li>
+
+
+	<ul class="quiz">
+    	
+    <li>
+        
+    <h4>What are the correct numbers for standard array point assignment?</h4>
+        
+        <ul class="choices">
+           
+            <li>
+             
+                <label>
+
+                    <input type="radio" name="question3" value="A" /><span>16,14,12,10,10,8,</span>
+
+                </label>
+            </li>
+
+
+            <li>
+                <label>
+
+                	<input type="radio" name="question3" value="B" /><span>16,15,14,12,10,8</span>
+
+                </label>
+
+            </li>
+
+            <li>
+             
+                <label>
+
+                    <input type="radio" name="question3" value="C" /><span>15,14,13,12,10,8</span>
+
+                </label>
+            </li>
+
+
+            <li>
+                <label>
+
+                	<input type="radio" name="question3" value="D" /><span>14,13,12,12,10,9</span>
+
+                </label>
+
+            </li>
+
+        </ul>
+
+    </li> 
+    
+
+          
+<button class="view-results" onclick="returnScore()">View Results</button>
+<span id="myresults" class="my-results">Score will appear here</span>
+
+	<pre>
+		
+
+
+
+	</pre>
+
+	</body>
+
+</html>

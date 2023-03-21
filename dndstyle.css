@@ -1,0 +1,88 @@
+body {
+  background-color: powderblue;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wwh1 {
+  text-align: center;
+  align-content: center;
+  border-color: darkviolet;
+  border-style: dotted;
+  color: mediumblue;
+  font-family: monospace;
+}
+
+h2 {
+  text-align: left;
+  font-family: monospace;
+  color: mediumblue;
+  text-decoration: underline ;
+  font-size: 22px;
+}
+
+h3 {
+  color: indigo;
+  font-family: monospace;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+li {
+  font-family: monospace;
+  font-size: 20px;
+  color: blue;
+  text-align: left;
+}
+
+h4 {
+  color: indigo ;
+}
+
+p {
+  font-family: monospace;
+  font-size: 20px;
+  color: darkorchid;
+  text-align: left;
+}
+
+hr {
+  color: darkblue;
+  height: 3px;
+  border-width: 0;
+  background-color: darkblue;
+}
+
+/* custom classes go here */
+
+.footer-text {
+  font-family: monospace;
+  font-size: 10px;
+  color: white;
+  text-align: center;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: darkviolet;
+  color: darkviolet;
+  text-align: center;
+}
+
+.small {
+  color: mediumblue;
+  height: 1px;
+  border-width: 0;
+  background-color: darkblue;
+}
