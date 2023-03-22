@@ -1,0 +1,49 @@
+evaluation:
+
+what was good? 
+ - having an external css page
+ - organised code
+ - custom icon
+
+what could be improved?
+ - place website inside a div element with a backrgound outside it would look cool
+ - use switch and case instead of stacked else if a million times
+ - seperately linked js sheet, i couldn't get it to work for some reason lol
+
+what got completed what still needed to be done
+ - finished all 5 pages
+ - got quiz working
+ - needed to tidy up js
+ - wanted to make another page about character sheets and stat blogs, didn't finish that.
+ - add div element to place website in and have outside background
+ - wanted to make a what alignment are you quiz, couldnt figure it out so i just did a trivia quiz
+
+how could i have used my time better? 
+ - stop goofing around on sololearn making irrelevant projects
+ - stop screaming at my computer when i mess something up and instead actually work on it
+ - not spend an hour colour balancing the photos to look alright because crappy lighting + phone camera and just retake the photos lol
+
+issues i had and how they were corrected
+ - images being the wrong colour
+   - fixed by using photoshop colour balance to fix them
+
+ - website being boring as heck and uninteractive
+   - add quiz to make it more fun
+
+ - images being a pain to center
+   - make a center class
+
+ - new pages taking a bit to set up
+   - make a template page
+
+ - footer not following when you scroll
+   - just threw it in a div with some more css
+
+what pages link:
+
+main page and directory linked to by all pages via footer
+
+main page has a link to directory in text
+
+all pages are linked to in directory
+
