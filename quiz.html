@@ -106,21 +106,25 @@
 		function returnScore() {
     	document.getElementById("myresults").innerHTML =
         "Your score is " + getScore() + "/" + tot;
-   		if (getScore() > 3) {
+   		if (getScore() == 4) {
         	alert("4/4, congratulations! You have no life! Touch some grass.")
     } 
-    	else if (getScore() > 2) {
+    	else if (getScore() == 3) {
     		alert("3/4. Not (that) bad.")
     }
-    	else if (getScore() > 1) {
+    	else if (getScore() == 2) {
     		alert("2/4 is almost, nearly, slightly ok..")
     }
-    	else if (getScore() > 0) {
+    	else if (getScore() == 1) {
     		alert("1/4 You must have guessed randomly, obviously. If this was a genuine attempt, I feel bad for you.")
     }
 
+    	else if (getScore() == 0) {
+    		alert("0/4. really? do you live under a rock? have you gone outside, talked to someone, watched any form of media? hell, even been on any online space ever? i refuse to belive this was an actual attempt, this is genuinely sad. you are a disappointment to anyone and everyone who has ever lived.")
+    	}
+
     	else {
-    		alert("This should not be happening, if you see this text something went wrong. please send me a discord message at HollowKin89#9503 or on my github - HollowKin89, so i can fix this")
+    		alert("If you see this text, something's gone wrong. Please open an issue on the github page for the blog here: https://github.com/hollowkin89/dnd-blog/issues ")
     };
 }
     		</script>
@@ -129,7 +133,7 @@
 
 		<hr>
 
-		<p> in this quiz, you will see how well you know d&d. there are 10 questions. what will your score be?</p>
+		<p> in this quiz, you will see how well you know d&d. there are 4 questions. what will your score be?</p>
 
 		<ul class="quiz">
     	
